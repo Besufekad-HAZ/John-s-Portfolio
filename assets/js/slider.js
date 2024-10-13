@@ -9,7 +9,7 @@ const services = [
         img: './assets/img/Boni Beauty Bar.jpg',
         text: 'Commercial photography',
       },
-      { img: './assets/img/Prom Night.jpg', text: 'Modeling photography' },
+      { img: './assets/img/modeling.jpg', text: 'Modeling photography' },
       { img: 'path/to/product-photography.jpg', text: 'Product photography' },
       { img: './assets/img/wedding.jpg', text: 'Wedding photography' },
       {
