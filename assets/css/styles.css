@@ -546,24 +546,28 @@ img {
   transform: scale(1.2);
 }
 /*=============== SERVICES ===============*/
+
+/* Service Cards */
 .services__card {
   background-color: var(--container-color);
   padding: 4rem 1.5rem 3.5rem 1.5rem;
   border-radius: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
-
+.services__card:hover {
+  transform: scale(1.05);
+}
 .services__icon {
   display: inline-block;
   position: relative;
   margin-bottom: 2rem;
 }
-
 .services__icon i {
   font-size: 2.5rem;
   position: relative;
   z-index: var(--z-tooltip);
 }
-
 .services__circle {
   width: 3rem;
   height: 3rem;
@@ -574,18 +578,73 @@ img {
   right: -1rem;
   transition: transform 0.4s;
 }
-
 .services__name {
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
 }
-
 .services__description {
   color: var(--text-color);
 }
-
 .services__card:hover .services__circle {
   transform: translate(0.25rem, -0.25rem);
+}
+
+/* Swiper Slider */
+.services__slider {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+.services__slider.active {
+  display: flex;
+}
+.swiper-container {
+  width: 80%;
+  height: 80%;
+}
+.swiper-slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: filter 0.3s ease;
+}
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+.swiper-slide p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.swiper-slide.blur {
+  filter: blur(5px);
+}
+.swiper-button-prev,
+.swiper-button-next,
+.slider__button.close {
+  color: white;
+}
+.slider__button.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
 }
 
 /*=============== EXPERIENCE ===============*/

@@ -13,6 +13,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
@@ -69,7 +74,9 @@
             <img src="assets/img/Jo 1.png" alt="image" class="perfil__img" />
 
             <div class="perfil__data">
-              <h2 class="perfil__name">YOHANNES <span class="under">MENGESHA</span></h2>
+              <h2 class="perfil__name">
+                YOHANNES <span class="under">MENGESHA</span>
+              </h2>
 
               <p class="founder">Founder, Cinematographer & Photograapher</p>
 
@@ -95,17 +102,16 @@
             </div>
             <h2 class="info__name">Vision & Mission</h2>
             <p class="info__description" id="info-description">
-              <span class="color">Our vision </span>is to be a leading force in the film and photography
-              industry, known for our artistry and professionalism. We aim to
-              create compelling narratives that inspire and engage viewers,
-              while pushing the boundaries of creativity in every project we
-              undertake.
-              <br /><br />
-              <span class="color">Our mission </span> is to provide our clients with tailored production
-              services that capture their unique stories. We believe in the
-              power of visual storytelling and strive to bring each client’s
-              vision to life through collaborative creativity and technical
-              expertise.
+              <span class="color">Our vision </span>is to be a leading force in
+              the film and photography industry, known for our artistry and
+              professionalism. We aim to create compelling narratives that
+              inspire and engage viewers, while pushing the boundaries of
+              creativity in every project we undertake. <br /><br />
+              <span class="color">Our mission </span> is to provide our clients
+              with tailored production services that capture their unique
+              stories. We believe in the power of visual storytelling and strive
+              to bring each client’s vision to life through collaborative
+              creativity and technical expertise.
             </p>
             <button class="see-more-btn" id="see-more-btn">See More</button>
 
@@ -461,50 +467,22 @@
       <!--==================== SERVICES ====================-->
       <section class="services section" id="services">
         <h2 class="section__title">SERVICES WE OFFER</h2>
+        <div
+          class="services__container container grid"
+          id="services-container"
+        ></div>
 
-        <div class="services__container container grid">
-          <article class="services__card">
-            <div class="services__icon">
-              <div class="services__circle"></div>
-              <i class="ri-camera-lens-line"></i>
-            </div>
-
-            <h3 class="services__name">Corporate Videos:</h3>
-            <p class="services__description">
-              Promotional videos showcasing companies, products, or services.
-              Advertising Campaigns: Conceptualizing and producing
-              advertisements for various media platforms, including television
-              and online.
-            </p>
-          </article>
-
-          <article class="services__card">
-            <div class="services__icon">
-              <div class="services__circle"></div>
-              <i class="ri-video-on-fill"></i>
-            </div>
-
-            <h3 class="services__name">Music Video</h3>
-            <p class="services__description">
-              Utilizing a range of techniques, from dynamic camera movements to
-              artistic lighting, to capture high-quality footage that enhances
-              the music.
-            </p>
-          </article>
-
-          <article class="services__card">
-            <div class="services__icon">
-              <div class="services__circle"></div>
-              <i class="ri-pen-nib-fill"></i>
-            </div>
-
-            <h3 class="services__name">Graphic Design</h3>
-            <p class="services__description">
-              “Transform your ideas into stunning visuals with our expert
-              graphic design services. From logos to brochures, we bring your
-              vision to life.
-            </p>
-          </article>
+        <!-- Hidden Slider -->
+        <div id="services-slider" class="services__slider hidden">
+          <div class="swiper-container">
+            <div class="swiper-wrapper" id="swiper-wrapper"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+            <button class="slider__button close" onclick="hideSlider()">
+              &#10006;
+            </button>
+          </div>
         </div>
       </section>
 
@@ -667,17 +645,24 @@
       </span>
     </footer>
 
-    <!--========== SCROLL UP ==========-->
-
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--=============== THEME TOGGLE JS ===============-->
     <script src="assets/js/themeToogle.js"></script>
 
+    <!--=============== SEE MORE JS ===============-->
     <script src="assets/js/seeMore.js"></script>
+
+    <!--=============== SLIDER JS ===============-->
+    <script src="assets/js/slider.js"></script>
+
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
   </body>
