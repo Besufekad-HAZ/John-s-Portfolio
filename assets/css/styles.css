@@ -153,6 +153,14 @@ body.light-theme .projects__data a {
   color: black;
 }
 
+body.light-theme .under {
+  color: rgb(223, 146, 30);
+}
+
+body.light-theme .founder {
+  color: black;
+}
+
 body.light-theme .about__link {
   background-color: var(--black-color);
   color: var(--white-color);
