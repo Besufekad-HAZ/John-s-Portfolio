@@ -383,8 +383,8 @@ img {
 }
 
 .info__image {
-  background: var(--conic-gradient);
-  height: 180px;
+  /* background: var(--conic-gradient); */
+  width: 100%;
   border-radius: 2rem;
   display: grid;
   margin-block: 1.5rem;
@@ -472,9 +472,9 @@ img {
 }
 
 .about__image {
-  background: var(--conic-gradient);
+  /* background: var(--conic-gradient); */
   height: 180px;
-  border-radius: 2rem;
+  border-radius: 1rem;
   display: grid;
   overflow: hidden;
 }
