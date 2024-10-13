@@ -1,6 +1,9 @@
 /* Show Scroll/*=============== GOOGLE FONTS ===============*/
+/*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat+Alternates:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*=============== VARIABLES CSS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
 :root {
   --hue: 42;
   --first-color: hsl(var(--hue), 80%, 49%);
@@ -95,12 +98,12 @@ h4,
 
 body.light-theme {
   background-color: var(--light-body-color);
-  color: white;
+  color: black;
 }
 
 body.light-theme .container {
-  background-color: var(--light-container-color);
-  color: white;
+  /* background-color: var(--light-container-color); */
+  color: var(--light-text-color);
 }
 
 body.light-theme h1,
@@ -111,10 +114,74 @@ body.light-theme h4 {
 }
 
 body.light-theme .nav {
-  background-color: hsla(var(--hue), 2%, 10%, 0.1);
+  background-color: hsla(var(--hue), 2%, 90%, 0.1);
 }
 
 body.light-theme .nav__link {
+  color: var(--black-color);
+}
+
+body.light-theme .theme-toggle {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+body.light-theme .perfil {
+  background: rgb(255, 255, 255);
+}
+
+body.light-theme .perfil__data {
+  background-color: hsla(0, 0%, 90%, 0.1);
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+body.light-theme .info,
+body.light-theme .about,
+body.light-theme .skills,
+body.light-theme .projects__card,
+body.light-theme .experience__data,
+body.light-theme .contact__input {
+  background-color: var(--light-container-color);
+  color: var(--light-text-color);
+}
+
+
+body.light-theme .services__name {
+  color: white;
+}
+
+body.light-theme .projects__data a {
+  color: black;
+}
+
+body.light-theme .about__link {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+body.light-theme .about__link:hover {
+  background-color: var(--first-color);
+  color: var(--white-color);
+}
+
+body.light-theme .footer__logo,
+body.light-theme .footer__link,
+body.light-theme .footer__copy {
+  color: black;
+}
+
+body.light-theme .footer__social-link {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+body.light-theme .footer__social-link:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+body.light-theme .scrollup {
+  background-color: hsla(0, 0%, 90%, 0.1);
   color: var(--black-color);
 }
 
@@ -131,11 +198,6 @@ body.light-theme .nav__link {
   cursor: pointer;
   transition: background-color 0.4s;
   z-index: var(--z-fixed);
-}
-
-body.light-theme .theme-toggle {
-  background-color: var(--black-color);
-  color: var(--white-color);
 }
 
 input,
@@ -645,6 +707,10 @@ img {
   top: 10px;
   right: 10px;
   border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
 }
 
 /*=============== EXPERIENCE ===============*/
