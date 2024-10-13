@@ -11,12 +11,12 @@ const services = [
       },
       { img: './assets/img/Prom Night.jpg', text: 'Modeling photography' },
       { img: 'path/to/product-photography.jpg', text: 'Product photography' },
-      { img: 'path/to/wedding-photography.jpg', text: 'Wedding photography' },
+      { img: './assets/img/wedding.jpg', text: 'Wedding photography' },
       {
         img: 'path/to/landscape-photography.jpg',
         text: 'Landscape photography',
       },
-      { img: 'path/to/portrait-photography.jpg', text: 'Portrait photography' },
+      { img: './assets/img/Portrait.jpg', text: 'Portrait photography' },
     ],
   },
   {
@@ -85,7 +85,7 @@ function showSlider(serviceName) {
     const slide = document.createElement('div');
     slide.className = 'swiper-slide';
     slide.innerHTML = `
-      <img src="${detail.img}" alt="${detail.text}">
+      <img class="service__image" src="${detail.img}" alt="${detail.text}">
       <p>${detail.text}</p>
     `;
     wrapper.appendChild(slide);
