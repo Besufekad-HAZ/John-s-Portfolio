@@ -6,14 +6,14 @@ const services = [
     icon: 'ri-camera-lens-line',
     details: [
       {
-        img: './assets/img/Boni Beauty Bar.jpg',
+        img: './assets/img/commercial.jpg',
         text: 'Commercial photography',
       },
       { img: './assets/img/modeling.jpg', text: 'Modeling photography' },
-      { img: 'path/to/product-photography.jpg', text: 'Product photography' },
+      { img: './assets/img/product.jpg', text: 'Product photography' },
       { img: './assets/img/wedding.jpg', text: 'Wedding photography' },
       {
-        img: 'path/to/landscape-photography.jpg',
+        img: './assets/img/landscape.jpg',
         text: 'Landscape photography',
       },
       { img: './assets/img/Portrait.jpg', text: 'Portrait photography' },
