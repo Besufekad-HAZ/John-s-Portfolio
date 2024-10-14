@@ -28,17 +28,43 @@ const services = [
       {
         img: 'path/to/commercial-videography.jpg',
         text: 'Commercial videography',
+        videoUrl: 'https://www.youtube.com/watch?v=example1', // YouTube URL
       },
-      { img: 'path/to/modeling-videography.jpg', text: 'Modeling videography' },
-      { img: 'path/to/product-videography.jpg', text: 'Product videography' },
-      { img: 'path/to/wedding-videography.jpg', text: 'Wedding videography' },
+      {
+        img: 'path/to/modeling-videography.jpg',
+        text: 'Modeling videography',
+        videoUrl: 'https://www.youtube.com/watch?v=example2',
+      },
+      {
+        img: 'path/to/product-videography.jpg',
+        text: 'Product videography',
+        videoUrl: 'https://www.youtube.com/watch?v=example3',
+      },
+      {
+        img: 'path/to/wedding-videography.jpg',
+        text: 'Wedding videography',
+        videoUrl: 'https://www.youtube.com/watch?v=example4',
+      },
       {
         img: 'path/to/landscape-videography.jpg',
         text: 'Landscape videography',
+        videoUrl: 'https://www.youtube.com/watch?v=example5',
       },
-      { img: 'path/to/portrait-videography.jpg', text: 'Portrait videography' },
-      { img: 'path/to/music-clip.jpg', text: 'Music clip' },
-      { img: 'path/to/documentaries.jpg', text: 'Documentaries' },
+      {
+        img: 'path/to/portrait-videography.jpg',
+        text: 'Portrait videography',
+        videoUrl: 'https://www.youtube.com/watch?v=example6',
+      },
+      {
+        img: 'path/to/music-clip.jpg',
+        text: 'Music clip',
+        videoUrl: 'https://www.youtube.com/watch?v=example7',
+      },
+      {
+        img: 'path/to/documentaries.jpg',
+        text: 'Documentaries',
+        videoUrl: 'https://www.youtube.com/watch?v=example8',
+      },
     ],
   },
   {
@@ -50,6 +76,24 @@ const services = [
       { img: 'path/to/brand-identity.jpg', text: 'Brand identity' },
       { img: 'path/to/logo-design.jpg', text: 'Logo design' },
       { img: 'path/to/light-box.jpg', text: 'Light box' },
+    ],
+  },
+  {
+    name: 'Drone Service',
+    description:
+      'Leveraging cutting-edge drone technology to capture breathtaking aerial footage and photography. Our drone services provide unique perspectives and high-quality visuals for commercial, modeling, and product videography.',
+    icon: 'ri-focus-3-fill',
+    details: [
+      {
+        img: './assets/img/Sebeta-drone.png',
+        text: 'Sebeta Drone',
+        videoUrl: 'https://youtu.be/ynKFqb0S4zY', // YouTube URL
+      },
+      {
+        img: 'path/to/product-videography.jpg',
+        text: 'Product videography',
+        videoUrl: 'https://www.youtube.com/watch?v=example11',
+      },
     ],
   },
 ];
@@ -85,7 +129,18 @@ function showSlider(serviceName) {
     const slide = document.createElement('div');
     slide.className = 'swiper-slide';
     slide.innerHTML = `
-      <img class="service__image" src="${detail.img}" alt="${detail.text}">
+      <div class="service__image-container">
+        <img class="service__image" src="${detail.img}" alt="${
+      detail.text
+    }" data-video-url="${detail.videoUrl || ''}">
+        ${
+          detail.videoUrl
+            ? '<div class="service__overlay" onclick="window.open(\'' +
+              detail.videoUrl +
+              '\', \'_blank\')"><i class="ri-youtube-fill"></i> Watch on YouTube</div>'
+            : ''
+        }
+      </div>
       <p>${detail.text}</p>
     `;
     wrapper.appendChild(slide);
@@ -124,9 +179,29 @@ function showSlider(serviceName) {
   });
 }
 
+document.addEventListener('DOMContentLoaded', renderServices);
+
+document.addEventListener('click', function (event) {
+  if (event.target.classList.contains('service__image')) {
+    const videoUrl = event.target.getAttribute('data-video-url');
+    if (videoUrl) {
+      window.open(videoUrl, '_blank');
+    }
+  }
+});
+
 function hideSlider() {
   const slider = document.getElementById('services-slider');
   slider.classList.remove('active');
 }
 
 document.addEventListener('DOMContentLoaded', renderServices);
+
+document.addEventListener('click', function (event) {
+  if (event.target.classList.contains('service__image')) {
+    const videoUrl = event.target.getAttribute('data-video-url');
+    if (videoUrl) {
+      window.open(videoUrl, '_blank');
+    }
+  }
+});

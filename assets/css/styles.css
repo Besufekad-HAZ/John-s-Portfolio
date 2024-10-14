@@ -624,6 +624,7 @@ img {
 .projects__card:hover .projects__img {
   transform: scale(1.2);
 }
+
 /*=============== SERVICES ===============*/
 
 /* Service Cards */
@@ -668,11 +669,49 @@ img {
   transform: translate(0.25rem, -0.25rem);
 }
 
+.service__image-container {
+  position: relative;
+  display: inline-block;
+  height: 95vh;
+}
+
 .service__image {
   display: block;
-  /* overflow: scroll; */
   border-radius: 1.5rem;
   margin-bottom: 1vw;
+}
+
+.service__overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins, 'sans-serif';
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1002; /* Ensure overlay is above the image */
+}
+
+.service__overlay:hover {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.service__image-container:hover .service__overlay {
+  opacity: 1;
+}
+
+.service__overlay i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
 }
 
 /* Swiper Slider */
@@ -694,6 +733,7 @@ img {
 .swiper-container {
   width: 80%;
   height: 80%;
+  object-fit: contain;
 }
 .swiper-slide {
   position: relative;
@@ -704,9 +744,9 @@ img {
   transition: filter 0.3s ease;
 }
 .swiper-slide img {
-  /* width: 100%; */
-  height: 110%;
-  object-fit: cover; /* Ensures the image fits within the container without stretching */
+  max-height: 100%; /* Ensures the image fits within the container without exceeding its height */
+  object-fit: contain; /* Ensures the image fits within the container without stretching */
+  border-radius: 1.5rem;
 }
 .swiper-slide p {
   position: absolute;
@@ -726,7 +766,7 @@ img {
 }
 
 .slider__button.close {
-  position: absolute;
+  position: fixed; /* Changed to fixed to ensure it stays in place */
   font-size: 2vh;
   background: none;
   color: white;
@@ -737,6 +777,7 @@ img {
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 20%;
+  z-index: 1001; /* Ensure it is above the swiper container */
 }
 
 .slider__button.close:hover {
@@ -1158,6 +1199,7 @@ img {
   }
   .services__icon i {
     font-size: 3.5rem;
+    color: oldlace;
   }
   .services__circle {
     width: 4rem;
