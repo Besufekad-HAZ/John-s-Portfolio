@@ -1,5 +1,15 @@
 const projects = [
   {
+    img: 'assets/img/Adwa.jpg',
+    name: 'Adwa Museum',
+    skills: [
+      'assets/img/skills-photoshop.svg',
+      'assets/img/davinci-resolve-12.svg',
+      'assets/img/premiere-pro-cc.svg',
+    ],
+    link: 'https://youtu.be/fI8oxGS1BHI',
+  },
+  {
     img: 'assets/img/Cultureday.jpg',
     name: 'Ethiopian culture day at Dream Success Academy',
     skills: [
@@ -21,22 +31,22 @@ const projects = [
     link: 'https://youtu.be/S1dk1Ttm8M8?si=r6gRBZPvJu086vg8',
   },
   {
-    img: 'assets/img/Cultural.jpg',
-    name: 'Ethiopian Cultural Festival',
+    img: 'assets/img/horse.jpg',
+    name: 'Sandafa Horse Gugs game 2024',
     skills: [
       'assets/img/skills-photoshop.svg',
       'assets/img/adobe-photoshop-lightroom-cc-icon.svg',
     ],
-    link: 'https://youtu.be/9uz_FPiJnhU',
+    link: 'https://www.youtube.com/watch?v=0Zw2c-9t4eY',
   },
   {
-    img: 'assets/img/Boni Beauty Bar.jpg',
-    name: 'Boni Beauty Bar Advertising Video',
+    img: 'assets/img/bag-show.png',
+    name: 'The Bag Show 2024',
     skills: [
       'assets/img/davinci-resolve-12.svg',
       'assets/img/premiere-pro-cc.svg',
     ],
-    link: 'https://youtu.be/Of-GrgXueUs?si=yozSNEYcZ3x3uxjh',
+    link: 'https://youtu.be/zgD-uve_reM',
   },
   {
     img: 'assets/img/bgs.jpg',
@@ -47,16 +57,6 @@ const projects = [
       'assets/img/premiere-pro-cc.svg',
     ],
     link: 'https://youtu.be/89nax7HlsNo?si=FYTi69jXUoOzWF6F',
-  },
-  {
-    img: 'assets/img/Adwa.jpg',
-    name: 'Adwa Museum',
-    skills: [
-      'assets/img/skills-photoshop.svg',
-      'assets/img/davinci-resolve-12.svg',
-      'assets/img/premiere-pro-cc.svg',
-    ],
-    link: 'https://youtu.be/fI8oxGS1BHI',
   },
 ];
 
