@@ -149,6 +149,10 @@ body.light-theme .services__name {
   color: white;
 }
 
+body.light-theme .companies__name {
+  color: aliceblue;
+}
+
 body.light-theme .projects__data a {
   color: black;
 }
@@ -742,6 +746,84 @@ img {
 
 .swiper-pagination-bullet-active {
   background-color: var(--first-color);
+}
+
+/* Companies We Work With */
+.companies {
+  padding: 2rem 0;
+  background-color: #ffffff0a;
+}
+
+.companies__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; /* Ensure all cards stretch to the same height */
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.companies__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: var(--container-color);
+  padding: 4rem 1.5rem 3.5rem 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  flex: 1 1 300px; /* Allow cards to grow and shrink, with a minimum width */
+  max-width: 300px; /* Ensure cards don't grow too large */
+}
+
+.companies__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 4px solid chocolate;
+}
+
+.companies__img {
+  width: 100%; /* Ensure image takes full width of the card */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.companies__name {
+  font-size: var(--h2-font-size);
+  font-weight: 600;
+  color: aliceblue;
+}
+
+.companies__button {
+  display: inline-flex; /* Changed to inline-flex for better button styling */
+  align-items: center;
+  justify-content: center;
+  margin-top: 8%; /* Push the button to the bottom */
+  padding: 0.7rem 1.3rem; /* Added padding for button-like appearance */
+  font-size: 1rem;
+  color: #fff; /* White text color */
+  border: 2px solid chocolate;
+  border-radius: 0.5rem; /* Rounded corners */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.companies__button i {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.companies__button:hover {
+  background-color: chocolate;
+  transform: translateY(-3px); /* Slight lift on hover */
+  border: none;
+}
+
+.companies__button:hover i {
+  transform: translateX(5px); /* Move arrow icon to the right on hover */
 }
 
 /*=============== EXPERIENCE ===============*/
