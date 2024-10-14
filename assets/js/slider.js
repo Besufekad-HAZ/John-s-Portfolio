@@ -26,9 +26,9 @@ const services = [
     icon: 'ri-video-on-fill',
     details: [
       {
-        img: 'path/to/commercial-videography.jpg',
+        img: './assets/img/wanchi-run.png',
         text: 'Commercial videography',
-        videoUrl: 'https://www.youtube.com/watch?v=example1', // YouTube URL
+        videoUrl: 'https://www.youtube.com/watch?v=VsYujRvZdC0', // YouTube URL
       },
       {
         img: 'path/to/modeling-videography.jpg',
@@ -36,12 +36,12 @@ const services = [
         videoUrl: 'https://www.youtube.com/watch?v=example2',
       },
       {
-        img: 'path/to/product-videography.jpg',
+        img: './assets/img/product.png',
         text: 'Product videography',
-        videoUrl: 'https://www.youtube.com/watch?v=example3',
+        videoUrl: 'https://www.youtube.com/watch?v=DEKxhJyaDu0',
       },
       {
-        img: 'path/to/wedding-videography.jpg',
+        img: './assets/img/wedding.jpg',
         text: 'Wedding videography',
         videoUrl: 'https://www.youtube.com/watch?v=example4',
       },
@@ -56,9 +56,9 @@ const services = [
         videoUrl: 'https://www.youtube.com/watch?v=example6',
       },
       {
-        img: 'path/to/music-clip.jpg',
+        img: './assets/img/music-clip.png',
         text: 'Music clip',
-        videoUrl: 'https://www.youtube.com/watch?v=example7',
+        videoUrl: 'https://youtu.be/21wsq7adbzA?si=yzUVh4HC7nC1gSPe',
       },
       {
         img: 'path/to/documentaries.jpg',
@@ -90,9 +90,9 @@ const services = [
         videoUrl: 'https://youtu.be/ynKFqb0S4zY', // YouTube URL
       },
       {
-        img: 'path/to/product-videography.jpg',
-        text: 'Product videography',
-        videoUrl: 'https://www.youtube.com/watch?v=example11',
+        img: './assets/img/wanchi.png',
+        text: 'Wanchi Grand Bike 2024',
+        videoUrl: 'https://www.youtube.com/watch?v=-QHF2cX7ZkA',
       },
     ],
   },
