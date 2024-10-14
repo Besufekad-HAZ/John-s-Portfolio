@@ -26,7 +26,7 @@ const services = [
     icon: 'ri-video-on-fill',
     details: [
       {
-        img: './assets/img/wanchi-run.png',
+        img: './assets/img/BGS commercial.png',
         text: 'Commercial videography',
         videoUrl: 'https://www.youtube.com/watch?v=EC4nrFGrjbA', // YouTube URL
       },
@@ -46,9 +46,9 @@ const services = [
         videoUrl: 'https://www.youtube.com/watch?v=example4',
       },
       {
-        img: 'path/to/landscape-videography.jpg',
+        img: './assets/img/Sebeta-drone.png',
         text: 'Landscape videography',
-        videoUrl: 'https://www.youtube.com/watch?v=example5',
+        videoUrl: 'https://youtu.be/ynKFqb0S4zY',
       },
       {
         img: 'path/to/portrait-videography.jpg',
@@ -61,9 +61,9 @@ const services = [
         videoUrl: 'https://youtu.be/21wsq7adbzA?si=yzUVh4HC7nC1gSPe',
       },
       {
-        img: 'path/to/documentaries.jpg',
+        img: './assets/img/wanchi-run.png',
         text: 'Documentaries',
-        videoUrl: 'https://www.youtube.com/watch?v=example8',
+        videoUrl: 'https://youtu.be/VsYujRvZdC0',
       },
     ],
   },
