@@ -31,9 +31,9 @@ const services = [
         videoUrl: 'https://www.youtube.com/watch?v=EC4nrFGrjbA', // YouTube URL
       },
       {
-        img: 'path/to/modeling-videography.jpg',
+        img: './assets/img/Model.png',
         text: 'Modeling videography',
-        videoUrl: 'https://www.youtube.com/watch?v=example2',
+        videoUrl: 'https://youtube.com/shorts/uoE-dhpxXOo?feature=share',
       },
       {
         img: './assets/img/product.png',
