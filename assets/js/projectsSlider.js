@@ -31,7 +31,7 @@ const projects = [
     link: 'https://youtu.be/S1dk1Ttm8M8?si=r6gRBZPvJu086vg8',
   },
   {
-    img: 'assets/img/horse.jpg',
+    img: 'assets/img/horse.png',
     name: 'Sandafa Horse Gugs game 2024',
     skills: [
       'assets/img/skills-photoshop.svg',

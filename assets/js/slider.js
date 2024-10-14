@@ -51,11 +51,6 @@ const services = [
         videoUrl: 'https://youtu.be/ynKFqb0S4zY',
       },
       {
-        img: 'path/to/portrait-videography.jpg',
-        text: 'Portrait videography',
-        videoUrl: 'https://www.youtube.com/watch?v=example6',
-      },
-      {
         img: './assets/img/music-clip.png',
         text: 'Music clip',
         videoUrl: 'https://youtu.be/21wsq7adbzA?si=yzUVh4HC7nC1gSPe',
