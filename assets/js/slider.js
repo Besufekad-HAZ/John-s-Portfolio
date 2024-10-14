@@ -28,7 +28,7 @@ const services = [
       {
         img: './assets/img/wanchi-run.png',
         text: 'Commercial videography',
-        videoUrl: 'https://www.youtube.com/watch?v=VsYujRvZdC0', // YouTube URL
+        videoUrl: 'https://www.youtube.com/watch?v=EC4nrFGrjbA', // YouTube URL
       },
       {
         img: 'path/to/modeling-videography.jpg',
