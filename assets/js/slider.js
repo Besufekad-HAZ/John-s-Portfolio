@@ -36,9 +36,9 @@ const services = [
         videoUrl: 'https://youtube.com/shorts/uoE-dhpxXOo?feature=share',
       },
       {
-        img: './assets/img/product.png',
+        img: './assets/img/commercial.jpg',
         text: 'Product videography',
-        videoUrl: 'https://www.youtube.com/watch?v=DEKxhJyaDu0',
+        videoUrl: 'https://www.youtube.com/shorts/-t7bKCe3rEc',
       },
       {
         img: './assets/img/wedding.jpg',
