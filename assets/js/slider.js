@@ -41,9 +41,9 @@ const services = [
         videoUrl: 'https://www.youtube.com/shorts/-t7bKCe3rEc',
       },
       {
-        img: './assets/img/wedding.jpg',
+        img: './assets/img/wedding.png',
         text: 'Wedding videography',
-        videoUrl: 'https://www.youtube.com/watch?v=example4',
+        videoUrl: 'https://youtu.be/zUaR5JoIOzk',
       },
       {
         img: './assets/img/Sebeta-drone.png',
@@ -68,9 +68,9 @@ const services = [
       'Transform your ideas into stunning visuals with our expert graphic design services. From logos to brochures, we bring your vision to life.',
     icon: 'ri-pen-nib-fill',
     details: [
-      { img: 'path/to/brand-identity.jpg', text: 'Brand identity' },
-      { img: 'path/to/logo-design.jpg', text: 'Logo design' },
-      { img: 'path/to/light-box.jpg', text: 'Light box' },
+      { img: './assets/img/brand-identity.jpg', text: 'Brand identity' },
+      { img: './assets/img/logo-design.jpg', text: 'Logo design' },
+      { img: './assets/img/lightbox.jpg', text: 'Light box' },
     ],
   },
   {
