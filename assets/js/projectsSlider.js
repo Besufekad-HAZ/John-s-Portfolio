@@ -10,14 +10,13 @@ const projects = [
     link: 'https://youtu.be/fI8oxGS1BHI',
   },
   {
-    img: 'assets/img/Cultureday.jpg',
-    name: 'Ethiopian culture day at Dream Success Academy',
+    img: 'assets/img/Cultural.jpg',
+    name: 'Ethiopian Cultural Festival',
     skills: [
       'assets/img/skills-photoshop.svg',
-      'assets/img/adobe-illustrator-cc-3.svg',
-      'assets/img/premiere-pro-cc.svg',
+      'assets/img/adobe-photoshop-lightroom-cc-icon.svg',
     ],
-    link: 'https://youtu.be/FmpPMNF8K9Y?si=KM5mFJA2oMmZweFy',
+    link: 'https://youtu.be/9uz_FPiJnhU',
   },
   {
     img: 'assets/img/Prom Night.jpg',
