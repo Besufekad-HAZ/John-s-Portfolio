@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/ch" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/Eagle Pictures Logo Orange.png"
+      type="image/x-icon"
+    />
 
     <!--=============== REMIXICONS ===============-->
     <link
@@ -21,238 +25,280 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Eagle-Pictures-Ethiopia</title>
+    <title>Eagle Pictures Ethiopia | Professional Film & Photography</title>
   </head>
   <body class="dark-theme">
-    <!--==================== NAV ====================-->
-    <nav class="nav">
-      <ul class="nav__list">
-        <li>
-          <a href="#home" title="HOME" class="nav__link active-link">
-            <i class="ri-home-line"></i>
-          </a>
-        </li>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="header__nav container">
+        <a href="#home" class="header__logo">
+          <img
+            src="assets/img/Eagle Pictures Logo Orange.png"
+            alt="Eagle Pictures"
+            class="header__logo-img"
+          />
+          <span>Eagle Pictures</span>
+        </a>
 
-        <li>
-          <a href="#projects" title="Projects" class="nav__link">
-            <i class="ri-folder-line"></i>
-          </a>
-        </li>
+        <div class="header__menu" id="header-menu">
+          <ul class="header__list">
+            <li><a href="#home" class="header__link active-link">Home</a></li>
+            <li><a href="#about" class="header__link">About</a></li>
+            <li><a href="#projects" class="header__link">Projects</a></li>
+            <li><a href="#services" class="header__link">Services</a></li>
+            <li><a href="#team" class="header__link">Team</a></li>
+            <li><a href="#contact" class="header__link">Contact</a></li>
+          </ul>
 
-        <li>
-          <a href="#services" title="Services" class="nav__link">
-            <i class="ri-file-edit-line"></i>
-          </a>
-        </li>
+          <button class="header__close" id="header-close">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
 
-        <li>
-          <a href="#companies" title="Companies" class="nav__link">
-            <i class="ri-building-line"></i>
-          </a>
-        </li>
-
-        <!-- <li>
-          <a href="#experience" title="Experience" class="nav__link">
-            <i class="ri-honour-line"></i>
-          </a>
-        </li> -->
-
-        <li>
-          <a href="#contact" title="Contact" class="nav__link">
-            <i class="ri-send-plane-line"></i>
-          </a>
-        </li>
-        <li>
+        <div class="header__actions">
           <button id="theme-toggle" class="theme-toggle" title="Toggle theme">
             <i class="ri-sun-line"></i>
           </button>
-        </li>
-      </ul>
-    </nav>
+          <button class="header__toggle" id="header-toggle">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <!--===== PERFIL =====-->
-          <div class="perfil">
-            <img src="assets/img/Jo 1.png" alt="image" class="perfil__img" />
-
-            <div class="perfil__data">
-              <h2 class="perfil__name">
-                YOHANNES <span class="under">MENGESHA</span>
-              </h2>
-
-              <p class="founder">Founder, Cinematographer & Photograapher</p>
-
-              <div class="perfil__buttons">
-                <a href="#projects" class="button">Projects</a>
-                <a href="#services" class="button button__black">Services</a>
-              </div>
+      <!--==================== HERO ====================-->
+      <section class="hero" id="home">
+        <div class="hero__bg">
+          <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__container container">
+          <div class="hero__content">
+            <div class="hero__badge">
+              <i class="ri-film-line"></i>
+              <span>Since 2021</span>
             </div>
-          </div>
-
-          <!--===== INFO =====-->
-          <div class="info">
-            <div class="info__data">
-              <div class="info__circle"></div>
-              <h1 class="info__name">Eagle Picture</h1>
-            </div>
-            <div class="info__image">
-              <img
-                src="assets/img/Eagle Pictures Logo Orange.png"
-                alt="image"
-                class="info__img"
-              />
-            </div>
-            <h2 class="info__name">Vision & Mission</h2>
-            <p class="info__description" id="info-description">
-              <span class="color">Our vision </span>is to be a leading force in
-              the film and photography industry, known for our artistry and
-              professionalism. We aim to create compelling narratives that
-              inspire and engage viewers, while pushing the boundaries of
-              creativity in every project we undertake. <br /><br />
-              <span class="color">Our mission </span> is to provide our clients
-              with tailored production services that capture their unique
-              stories. We believe in the power of visual storytelling and strive
-              to bring each client’s vision to life through collaborative
-              creativity and technical expertise.
+            <h1 class="hero__title">
+              Bringing Your <span class="hero__accent">Vision</span> to Life
+            </h1>
+            <p class="hero__subtitle">
+              Professional Film & Photography Production Company
             </p>
-            <button class="see-more-btn" id="see-more-btn">See More</button>
-
-            <a
-              href="https://drive.google.com/file/d/1biR1-hr_PLaOlC6ZTuIufHWbaeHXDayZ/preview"
-              target="_blank"
-              class="button button__black"
-              >Company Profile</a
-            >
+            <p class="hero__description">
+              We are a creative team of videographers, cinematographers, video
+              editors, graphic designers, and photographers dedicated to
+              creating compelling visual stories that captivate and inspire.
+            </p>
+            <div class="hero__buttons">
+              <a href="#projects" class="button">
+                <i class="ri-play-circle-line"></i> View Our Work
+              </a>
+              <a href="#contact" class="button button__outline">
+                <i class="ri-mail-line"></i> Get in Touch
+              </a>
+            </div>
           </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-number">50+</span>
+              <span class="hero__stat-label">Projects Delivered</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">15+</span>
+              <span class="hero__stat-label">Team Members</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">3+</span>
+              <span class="hero__stat-label">Years Experience</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">10+</span>
+              <span class="hero__stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__scroll">
+          <a href="#about" class="hero__scroll-link">
+            <span>Scroll Down</span>
+            <i class="ri-arrow-down-line"></i>
+          </a>
+        </div>
+      </section>
 
-          <!--===== ABOUT =====-->
-          <div class="about">
-            <h3 class="about__name">
-              <b>About Us</b>
-            </h3>
-
-            <p class="about__description">
-              Welcome to Eagle Pictures! We’re a dedicated team of storytellers
-              bringing your visions to life through film and photography. Since
-              2021, our mission has been to create captivating visuals that
-              connect with audiences and make lasting memories. Our passion
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container">
+          <div class="about__content">
+            <span class="section__tag">Who We Are</span>
+            <h2 class="section__title section__title--left">
+              About <span class="text-accent">Eagle Pictures</span>
+            </h2>
+            <p class="about__text">
+              Welcome to Eagle Pictures! We're a professional production company
+              with a dedicated team of creative professionals bringing your
+              visions to life through film and photography.
+            </p>
+            <p class="about__text">
+              Since 2021, our mission has been to create captivating visuals
+              that connect with audiences and make lasting memories. Our passion
               drives us to capture moments that inspire and evoke emotions.
             </p>
-
-            <div class="about__social">
+            <div class="about__buttons">
               <a
-                href="https://t.me/Johneaglepic"
+                href="https://drive.google.com/file/d/1biR1-hr_PLaOlC6ZTuIufHWbaeHXDayZ/preview"
                 target="_blank"
-                class="about__link"
+                class="button"
               >
-                <i class="ri-telegram-fill"></i>
-              </a>
-
-              <a
-                href="https://www.tiktok.com/@yohannes_.eaglepic?is_from_webapp=1&sender_device=pc"
-                target="_blank"
-                class="about__link"
-              >
-                <i class="ri-tiktok-fill"></i>
-              </a>
-
-              <a
-                href="https://youtube.com/@eaglepicturesethiopia5847?si=EobjTYWI7fseY4WX"
-                target="_blank"
-                class="about__link"
-              >
-                <i class="ri-youtube-fill"></i>
+                <i class="ri-file-pdf-line"></i> Company Profile
               </a>
             </div>
-
-            <div class="about__image">
+          </div>
+          <div class="about__image">
+            <div class="about__image-wrapper">
               <img
                 src="assets/img/Eagle Pictures Logo Orange.png"
-                alt="image"
-                class="about__img2"
+                alt="Eagle Pictures"
+                class="about__img"
               />
             </div>
-
-            <p class="about__note">
-              Hit me up if you’re interested in working together, or drop me an
-              email and I’ll get back to you.
-            </p>
-
-            <a href="#contact" class="button">Contact Me</a>
+            <div class="about__experience">
+              <span class="about__experience-number">3+</span>
+              <span class="about__experience-text">Years of Excellence</span>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <!--===== SKILLS =====-->
-          <div class="skills">
-            <h2 class="skills__title">Skills</h2>
-
-            <div class="skills__items">
-              <img
-                src="assets/img/adobe-illustrator-cc-3.svg"
-                alt="image"
-                class="skills__item"
-              />
-              <img
-                src="assets/img/adobe-photoshop-lightroom-cc-icon.svg"
-                alt="image"
-                class="skills__item"
-              />
-              <img
-                src="assets/img/premiere-pro-cc.svg"
-                alt="image"
-                class="skills__item"
-              />
-              <img
-                src="assets/img/adobe-audition-cc-icon-2020-.svg"
-                alt="image"
-                class="skills__item"
-              />
-              <img
-                src="assets/img/davinci-resolve-12.svg"
-                alt="image"
-                class="skills__item"
-              />
-              <img
-                src="assets/img/adobe-indesign-cc-icon.svg"
-                alt="image"
-                class="skills__item"
-              />
-              <img
-                src="assets/img/canva-1.svg"
-                alt="image"
-                class="skills__item"
-              />
-              <img
-                src="assets/img/after-effects-1.svg"
-                alt="image"
-                class="skills__item"
-              />
-              <img
-                src="assets/img/google-camera.svg"
-                alt="image"
-                class="skills__item"
-              />
-              <img
-                src="assets/img/skills-photoshop.svg"
-                alt="image"
-                class="skills__item"
-              />
+      <!--==================== VISION MISSION ====================-->
+      <section class="vision section">
+        <div class="vision__container container">
+          <div class="vision__header">
+            <span class="section__tag">Our Purpose</span>
+            <h2 class="section__title">Vision & Mission</h2>
+          </div>
+          <div class="vision__grid">
+            <div class="vision__card">
+              <div class="vision__icon">
+                <i class="ri-eye-line"></i>
+              </div>
+              <h3 class="vision__title">Our Vision</h3>
+              <p class="vision__text">
+                To be a leading force in the film and photography industry,
+                known for our artistry and professionalism. We aim to create
+                compelling narratives that inspire and engage viewers, while
+                pushing the boundaries of creativity in every project we
+                undertake.
+              </p>
             </div>
+            <div class="vision__card">
+              <div class="vision__icon">
+                <i class="ri-rocket-line"></i>
+              </div>
+              <h3 class="vision__title">Our Mission</h3>
+              <p class="vision__text">
+                To provide our clients with tailored production services that
+                capture their unique stories. We believe in the power of visual
+                storytelling and strive to bring each client's vision to life
+                through collaborative creativity and technical expertise.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <p class="skills__description">
-              Check out the projects section to explore the work we’ve
-              accomplished using these technologies.
-            </p>
+      <!--==================== SKILLS ====================-->
+      <section class="skills section">
+        <div class="skills__container container">
+          <span class="section__tag">Our Tools</span>
+          <h2 class="section__title">Professional Software & Equipment</h2>
+          <div class="skills__marquee">
+            <div class="skills__track">
+              <div class="skills__item">
+                <img
+                  src="assets/img/adobe-illustrator-cc-3.svg"
+                  alt="Illustrator"
+                />
+                <span>Illustrator</span>
+              </div>
+              <div class="skills__item">
+                <img
+                  src="assets/img/adobe-photoshop-lightroom-cc-icon.svg"
+                  alt="Lightroom"
+                />
+                <span>Lightroom</span>
+              </div>
+              <div class="skills__item">
+                <img src="assets/img/premiere-pro-cc.svg" alt="Premiere Pro" />
+                <span>Premiere Pro</span>
+              </div>
+              <div class="skills__item">
+                <img
+                  src="assets/img/adobe-audition-cc-icon-2020-.svg"
+                  alt="Audition"
+                />
+                <span>Audition</span>
+              </div>
+              <div class="skills__item">
+                <img
+                  src="assets/img/davinci-resolve-12.svg"
+                  alt="DaVinci Resolve"
+                />
+                <span>DaVinci Resolve</span>
+              </div>
+              <div class="skills__item">
+                <img src="assets/img/after-effects-1.svg" alt="After Effects" />
+                <span>After Effects</span>
+              </div>
+              <div class="skills__item">
+                <img src="assets/img/skills-photoshop.svg" alt="Photoshop" />
+                <span>Photoshop</span>
+              </div>
+              <div class="skills__item">
+                <img src="assets/img/canva-1.svg" alt="Canva" />
+                <span>Canva</span>
+              </div>
+              <!-- Duplicate for seamless loop -->
+              <div class="skills__item">
+                <img
+                  src="assets/img/adobe-illustrator-cc-3.svg"
+                  alt="Illustrator"
+                />
+                <span>Illustrator</span>
+              </div>
+              <div class="skills__item">
+                <img
+                  src="assets/img/adobe-photoshop-lightroom-cc-icon.svg"
+                  alt="Lightroom"
+                />
+                <span>Lightroom</span>
+              </div>
+              <div class="skills__item">
+                <img src="assets/img/premiere-pro-cc.svg" alt="Premiere Pro" />
+                <span>Premiere Pro</span>
+              </div>
+              <div class="skills__item">
+                <img
+                  src="assets/img/adobe-audition-cc-icon-2020-.svg"
+                  alt="Audition"
+                />
+                <span>Audition</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!--==================== PROJECTS ====================-->
       <section class="projects section" id="projects">
-        <h2 class="section__title">RECENT PROJECTS</h2>
+        <div class="container">
+          <span class="section__tag">Our Portfolio</span>
+          <h2 class="section__title">Recent Projects</h2>
+          <p class="section__subtitle">
+            Explore some of our recent work that showcases our creativity and
+            expertise
+          </p>
+        </div>
         <div class="projects__container container grid" id="projects-container">
           <!-- Projects will be dynamically inserted here -->
         </div>
@@ -260,7 +306,13 @@
 
       <!--==================== SERVICES ====================-->
       <section class="services section" id="services">
-        <h2 class="section__title">SERVICES WE OFFER</h2>
+        <div class="container">
+          <span class="section__tag">What We Offer</span>
+          <h2 class="section__title">Our Services</h2>
+          <p class="section__subtitle">
+            Comprehensive visual production services tailored to your needs
+          </p>
+        </div>
         <div
           class="services__container container grid"
           id="services-container"
@@ -280,16 +332,96 @@
         </div>
       </section>
 
-      <!--==================== COMPANIES WE WORK WITH ====================-->
+      <!--==================== TEAM ====================-->
+      <section class="team section" id="team">
+        <div class="container">
+          <span class="section__tag">Our People</span>
+          <h2 class="section__title">Meet The Creative Team</h2>
+          <p class="section__subtitle">
+            Talented professionals dedicated to bringing your vision to life
+          </p>
+        </div>
+        <div class="team__container container grid">
+          <div class="team__card">
+            <div class="team__icon">
+              <i class="ri-video-line"></i>
+            </div>
+            <h3 class="team__role">Videographers</h3>
+            <p class="team__description">
+              Our skilled videographers capture stunning footage with
+              professional cameras and equipment, ensuring every frame tells
+              your story beautifully.
+            </p>
+          </div>
+          <div class="team__card">
+            <div class="team__icon">
+              <i class="ri-scissors-cut-line"></i>
+            </div>
+            <h3 class="team__role">Video Editors</h3>
+            <p class="team__description">
+              Expert editors transform raw footage into compelling narratives
+              using industry-leading software like Premiere Pro and DaVinci
+              Resolve.
+            </p>
+          </div>
+          <div class="team__card">
+            <div class="team__icon">
+              <i class="ri-palette-line"></i>
+            </div>
+            <h3 class="team__role">Graphic Designers</h3>
+            <p class="team__description">
+              Creative designers craft visually striking graphics, logos, and
+              branding materials that make your brand stand out.
+            </p>
+          </div>
+          <div class="team__card">
+            <div class="team__icon">
+              <i class="ri-camera-3-line"></i>
+            </div>
+            <h3 class="team__role">Cameramen</h3>
+            <p class="team__description">
+              Professional camera operators with years of experience in
+              capturing events, commercials, documentaries, and more.
+            </p>
+          </div>
+          <div class="team__card">
+            <div class="team__icon">
+              <i class="ri-camera-lens-line"></i>
+            </div>
+            <h3 class="team__role">Photographers</h3>
+            <p class="team__description">
+              Talented photographers specializing in portraits, events, product
+              photography, and creative shoots.
+            </p>
+          </div>
+          <div class="team__card">
+            <div class="team__icon">
+              <i class="ri-magic-line"></i>
+            </div>
+            <h3 class="team__role">Post-Production</h3>
+            <p class="team__description">
+              Specialists in color grading, visual effects, and final polish to
+              ensure your content looks professional and engaging.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== COMPANIES ====================-->
       <section class="companies section" id="companies">
-        <h2 class="section__title">COMPANIES WE WORK WITH</h2>
-        <div class="companies__container container grid">
+        <div class="container">
+          <span class="section__tag">Trusted By</span>
+          <h2 class="section__title">Companies We Work With</h2>
+        </div>
+        <div class="companies__container container">
           <div class="companies__card">
-            <img
-              src="assets/img/visit-oromia.png"
-              alt="Visit Oromia"
-              class="companies__img"
-            />
+            <div class="companies__image">
+              <img
+                src="assets/img/visit-oromia.png"
+                alt="Visit Oromia"
+                class="companies__img"
+              />
+            </div>
             <h3 class="companies__name">Visit Oromia</h3>
             <a
               href="https://visitoromia.org/"
@@ -300,12 +432,14 @@
             </a>
           </div>
           <div class="companies__card">
-            <img
-              src="assets/img/Cactus.png"
-              alt="Cactus"
-              class="companies__img"
-            />
-            <h3 class="companies__name">Cactus</h3>
+            <div class="companies__image">
+              <img
+                src="assets/img/Cactus.png"
+                alt="Cactus"
+                class="companies__img"
+              />
+            </div>
+            <h3 class="companies__name">Cactus Ethiopia</h3>
             <a
               href="https://cactusethiopia.com/"
               target="_blank"
@@ -315,11 +449,13 @@
             </a>
           </div>
           <div class="companies__card">
-            <img
-              src="assets/img/Smile.png"
-              alt="Smile Pictures"
-              class="companies__img"
-            />
+            <div class="companies__image">
+              <img
+                src="assets/img/Smile.png"
+                alt="Smile Pictures"
+                class="companies__img"
+              />
+            </div>
             <h3 class="companies__name">Smile Pictures</h3>
             <a
               href="https://www.youtube.com/@SmilePicture_Gift"
@@ -332,192 +468,251 @@
         </div>
       </section>
 
-      <!--==================== EXPERIENCE
-      <section class="experience section" id="experience">
-        <h2 class="section__title">EXPERIENCE OR WORK</h2>
-
-        <div class="experience__container container grid">
-          <article class="experience__card">
-            <h2 class="experience__company">Purposeblack Ethiopia</h2>
-
-            <div class="experience__data">
-              <h3 class="experience__profession">Camera man & Editor</h3>
-              <span class="experience__date">Since March 2024</span>
-              <p class="experience__description">
-                Short description of the experience that was carried out in
-                theis portfolio.
-              </p>
-            </div>
-          </article>
-
-          <article class="experience__card">
-            <h2 class="experience__company">Nest Studio</h2>
-
-            <div class="experience__data">
-              <h3 class="experience__profession">
-                Cinematographer, Editor, Graphic Designer & Production Manager
-              </h3>
-              <span class="experience__date">February 2021 to March 2024</span>
-              <p class="experience__description">
-                Short description of the experience that was carried out in
-                theis portfolio.
-              </p>
-            </div>
-          </article>
-
-          <article class="experience__card">
-            <h2 class="experience__company">Ezra Studio</h2>
-
-            <div class="experience__data">
-              <h3 class="experience__profession">Editor & Camera Man</h3>
-              <span class="experience__date">August 2017 to January 2018</span>
-              <p class="experience__description">
-                Short description of the experience that was carried out in
-                theis portfolio.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-       ====================-->
-
       <!--==================== CONTACT ====================-->
       <section class="contact section" id="contact">
-        <h2 class="section__title">Contact US</h2>
-
-        <div class="contact__container container grid">
+        <div class="contact__container container">
+          <div class="contact__content">
+            <span class="section__tag">Get In Touch</span>
+            <h2 class="section__title section__title--left">
+              Let's Work <span class="text-accent">Together</span>
+            </h2>
+            <p class="contact__text">
+              Ready to bring your vision to life? Get in touch with our team and
+              let's create something amazing together.
+            </p>
+            <div class="contact__info">
+              <div class="contact__info-item">
+                <i class="ri-map-pin-line"></i>
+                <span>Addis Ababa, Ethiopia</span>
+              </div>
+              <div class="contact__info-item">
+                <i class="ri-mail-line"></i>
+                <span>contact@eaglepictures.com</span>
+              </div>
+            </div>
+          </div>
           <form
             action="https://formspree.io/f/xpwzzrye"
             method="POST"
-            class="contact__form grid"
+            class="contact__form"
             id="contact-form"
           >
-            <div class="contact__group grid">
+            <div class="contact__group">
               <input
                 type="text"
                 name="user_name"
-                placeholder="Name"
+                placeholder="Your Name"
                 required
                 class="contact__input"
               />
               <input
                 type="email"
                 name="user_email"
-                placeholder="Email"
+                placeholder="Your Email"
                 required
                 class="contact__input"
               />
             </div>
-
             <textarea
               name="user_message"
-              placeholder="Message"
+              placeholder="Your Message"
               class="contact__input contact__area"
             ></textarea>
-
             <button type="submit" class="button contact__button">
-              Send Message
+              <i class="ri-send-plane-line"></i> Send Message
             </button>
-
             <p class="contact__message" id="contact-message"></p>
           </form>
         </div>
       </section>
     </main>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-      <div class="footer__container container grid">
-        <div class="footer__content grid">
-          <a href="#" class="footer__logo">Eagle Picture</a>
-
-          <ul class="footer__links">
-            <li>
-              <a href="#home" class="footer__link">Home</a>
-            </li>
-
-            <li>
-              <a href="#projects" class="footer__link">Projects</a>
-            </li>
-
-            <li>
-              <a href="#services" class="footer__link">Services</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__social">
-          <a
-            href="https://www.tiktok.com/@yohannes_.eaglepic?is_from_webapp=1&sender_device=pc"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="ri-tiktok-fill"></i>
-          </a>
-
-          <a
-            href="https://www.facebook.com/people/Eagle-Pictures-Ethiopia/100075888346875/?mibextid=ZbWKwL"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="ri-facebook-circle-fill"></i>
-          </a>
-
+    <!--==================== SOCIAL BAR ====================-->
+    <section class="social">
+      <div class="social__container container">
+        <h3 class="social__title">Follow Us</h3>
+        <div class="social__links">
           <a
             href="https://t.me/Johneaglepic"
             target="_blank"
-            class="footer__social-link"
+            class="social__link"
+            title="Telegram"
           >
             <i class="ri-telegram-fill"></i>
           </a>
-
+          <a
+            href="https://www.tiktok.com/@yohannes_.eaglepic"
+            target="_blank"
+            class="social__link"
+            title="TikTok"
+          >
+            <i class="ri-tiktok-fill"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/people/Eagle-Pictures-Ethiopia/100075888346875/"
+            target="_blank"
+            class="social__link"
+            title="Facebook"
+          >
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
           <a
             href="https://www.instagram.com/yohannes_meng/"
             target="_blank"
-            class="footer__social-link"
+            class="social__link"
+            title="Instagram"
           >
             <i class="ri-instagram-fill"></i>
           </a>
-
           <a
-            href="https://youtube.com/@eaglepicturesethiopia5847?si=EobjTYWI7fseY4WX"
+            href="https://youtube.com/@eaglepicturesethiopia5847"
             target="_blank"
-            class="footer__social-link"
+            class="social__link"
+            title="YouTube"
           >
             <i class="ri-youtube-fill"></i>
           </a>
         </div>
       </div>
+    </section>
 
-      <span class="footer__copy">
-        &#169; 2024 Eagle Pictures. All rights reserved. Developed By
-        <a class="krubdev" target="_blank" href="https://t.me/KrubDev"
-          >KrubDev</a
-        >
-      </span>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="#home" class="footer__logo">
+              <img
+                src="assets/img/Eagle Pictures Logo Orange.png"
+                alt="Eagle Pictures"
+              />
+              <span>Eagle Pictures</span>
+            </a>
+            <p class="footer__description">
+              Professional film and photography production company bringing your
+              vision to life.
+            </p>
+          </div>
+          <div class="footer__links-group">
+            <h4 class="footer__title">Quick Links</h4>
+            <ul class="footer__list">
+              <li><a href="#home" class="footer__link">Home</a></li>
+              <li><a href="#about" class="footer__link">About</a></li>
+              <li><a href="#projects" class="footer__link">Projects</a></li>
+              <li><a href="#services" class="footer__link">Services</a></li>
+            </ul>
+          </div>
+          <div class="footer__links-group">
+            <h4 class="footer__title">Services</h4>
+            <ul class="footer__list">
+              <li><a href="#services" class="footer__link">Videography</a></li>
+              <li><a href="#services" class="footer__link">Photography</a></li>
+              <li>
+                <a href="#services" class="footer__link">Graphic Design</a>
+              </li>
+              <li>
+                <a href="#services" class="footer__link">Post-Production</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links-group">
+            <h4 class="footer__title">Contact</h4>
+            <ul class="footer__list">
+              <li><a href="#contact" class="footer__link">Get a Quote</a></li>
+              <li><a href="#team" class="footer__link">Our Team</a></li>
+              <li><a href="#companies" class="footer__link">Partners</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span class="footer__copy">
+            &copy; 2024 Eagle Pictures Ethiopia. All rights reserved.
+          </span>
+          <span class="footer__credits">
+            Developed by
+            <a
+              href="https://www.besutech.online"
+              target="_blank"
+              class="footer__credits-link"
+              >Besu</a
+            >
+          </span>
+        </div>
+      </div>
     </footer>
 
-    <!--=============== SCROLLREVEAL ===============-->
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCRIPTS ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
-
-    <!--=============== EMAIL JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <!--=============== SWIPER JS ===============-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!--=============== THEME TOGGLE JS ===============-->
     <script src="assets/js/themeToogle.js"></script>
-
-    <!--=============== SEE MORE JS ===============-->
     <script src="assets/js/seeMore.js"></script>
-
-    <!--=============== Projects SLIDER JS ===============-->
     <script src="assets/js/projectsSlider.js"></script>
-    <!--=============== Services SLIDER JS ===============-->
     <script src="assets/js/slider.js"></script>
-
-    <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <!--=============== HEADER MENU TOGGLE ===============-->
+    <script>
+      // Mobile menu toggle
+      const headerToggle = document.getElementById('header-toggle');
+      const headerMenu = document.getElementById('header-menu');
+      const headerClose = document.getElementById('header-close');
+
+      if (headerToggle) {
+        headerToggle.addEventListener('click', () => {
+          headerMenu.classList.add('show-menu');
+        });
+      }
+
+      if (headerClose) {
+        headerClose.addEventListener('click', () => {
+          headerMenu.classList.remove('show-menu');
+        });
+      }
+
+      // Close menu when clicking on links
+      const headerLinks = document.querySelectorAll('.header__link');
+      headerLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          headerMenu.classList.remove('show-menu');
+        });
+      });
+
+      // Header scroll effect
+      const header = document.getElementById('header');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          header.classList.add('header--scrolled');
+        } else {
+          header.classList.remove('header--scrolled');
+        }
+      });
+
+      // Active link on scroll
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.header__link');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 100;
+          if (scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove('active-link');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active-link');
+          }
+        });
+      });
+    </script>
   </body>
 </html>
