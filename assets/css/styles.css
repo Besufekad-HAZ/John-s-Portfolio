@@ -1398,9 +1398,10 @@ body.light-theme .hero__bg {
   background:
     linear-gradient(
       135deg,
-      hsla(var(--hue), 90%, 70%, 0.75) 0%,
-      hsla(var(--hue), 80%, 90%, 0.7) 50%,
-      hsla(0, 0%, 95%, 0.8) 100%
+      hsla(0, 0%, 100%, 0.45) 0%,
+      hsla(var(--hue), 20%, 98%, 0.5) 30%,
+      hsla(var(--hue), 15%, 95%, 0.55) 70%,
+      hsla(0, 0%, 98%, 0.6) 100%
     ),
     url('../img/hero-bg.png');
   background-size: cover;
@@ -1408,29 +1409,117 @@ body.light-theme .hero__bg {
   background-repeat: no-repeat;
 }
 
+body.light-theme .hero__overlay {
+  background:
+    radial-gradient(
+      ellipse at 20% 20%,
+      hsla(0, 0%, 100%, 0.75) 0%,
+      hsla(0, 0%, 100%, 0.4) 25%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 50% 80%,
+      hsla(0, 0%, 100%, 0.5) 0%,
+      transparent 40%
+    );
+}
+
 body.light-theme .hero__title-highlight {
-  color: hsl(var(--hue), 75%, 38%);
-  text-shadow: 0 0 30px hsla(var(--hue), 90%, 50%, 0.25);
+  color: hsl(var(--hue), 85%, 32%);
+  font-weight: 900;
+  text-shadow:
+    0 2px 8px hsla(0, 0%, 100%, 0.9),
+    0 4px 12px hsla(0, 0%, 100%, 0.7),
+    0 1px 3px hsla(var(--hue), 70%, 25%, 0.3);
 }
 
 body.light-theme .hero__title-mid {
-  color: hsl(var(--hue), 15%, 25%);
+  color: hsl(var(--hue), 25%, 18%);
+  font-weight: 600;
+  text-shadow:
+    0 2px 6px hsla(0, 0%, 100%, 0.9),
+    0 3px 10px hsla(0, 0%, 100%, 0.7),
+    0 1px 2px hsla(0, 0%, 0%, 0.2);
 }
 
 body.light-theme .hero__title-punch {
-  color: hsl(var(--hue), 15%, 18%);
-  text-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.08);
+  color: hsl(var(--hue), 30%, 12%);
+  font-weight: 900;
+  text-shadow:
+    0 2px 8px hsla(0, 0%, 100%, 0.95),
+    0 4px 12px hsla(0, 0%, 100%, 0.8),
+    0 1px 3px hsla(0, 0%, 0%, 0.25);
 }
 
 body.light-theme .hero__title-punch::after {
   background: linear-gradient(
     90deg,
     transparent 0%,
-    hsl(var(--hue), 75%, 45%) 30%,
-    hsl(var(--hue), 80%, 50%) 50%,
-    hsl(var(--hue), 75%, 45%) 70%,
+    hsl(var(--hue), 80%, 40%) 30%,
+    hsl(var(--hue), 85%, 45%) 50%,
+    hsl(var(--hue), 80%, 40%) 70%,
     transparent 100%
   );
+  opacity: 1;
+}
+
+body.light-theme .hero__subtitle {
+  color: hsl(var(--hue), 70%, 32%);
+  font-weight: 600;
+  text-shadow:
+    0 2px 6px hsla(0, 0%, 100%, 0.9),
+    0 3px 10px hsla(0, 0%, 100%, 0.7);
+}
+
+body.light-theme .hero__description {
+  color: hsl(var(--hue), 18%, 25%);
+  font-weight: 500;
+  text-shadow:
+    0 1px 4px hsla(0, 0%, 100%, 0.85),
+    0 2px 8px hsla(0, 0%, 100%, 0.7);
+}
+
+body.light-theme .hero__badge {
+  background-color: hsla(var(--hue), 80%, 50%, 0.2);
+  border-color: hsla(var(--hue), 80%, 35%, 0.5);
+  color: hsl(var(--hue), 80%, 30%);
+  text-shadow: 0 1px 3px hsla(0, 0%, 100%, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+body.light-theme .hero__stat-number {
+  color: hsl(var(--hue), 75%, 38%);
+  text-shadow:
+    0 1px 4px hsla(0, 0%, 100%, 0.9),
+    0 2px 6px hsla(0, 0%, 100%, 0.7);
+}
+
+body.light-theme .hero__stat-label {
+  color: hsl(var(--hue), 18%, 30%);
+  font-weight: 600;
+  text-shadow:
+    0 1px 3px hsla(0, 0%, 100%, 0.85),
+    0 2px 6px hsla(0, 0%, 100%, 0.7);
+}
+
+body.light-theme .hero__stats {
+  border-top-color: hsla(var(--hue), 30%, 50%, 0.25);
+  background: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.3), hsla(0, 0%, 100%, 0.5));
+  backdrop-filter: blur(8px);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+body.light-theme .hero__scroll-link {
+  color: hsl(var(--hue), 25%, 25%);
+  font-weight: 600;
+  text-shadow:
+    0 1px 3px hsla(0, 0%, 100%, 0.9),
+    0 2px 6px hsla(0, 0%, 100%, 0.7);
+}
+
+body.light-theme .hero__scroll-link:hover {
+  color: hsl(var(--hue), 75%, 35%);
 }
 
 body.light-theme .contact__input {
